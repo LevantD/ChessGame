@@ -4,5 +4,7 @@ public class LoginTest2 {
 
     @Test
 
-    public void loginTest(){}
+    public void loginTest(){
+
+    }
 }
