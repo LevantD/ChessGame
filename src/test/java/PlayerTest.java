@@ -1,3 +1,4 @@
+import org.apache.logging.log4j.core.util.JsonUtils;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -62,7 +63,6 @@ public class PlayerTest {
 
         });
     }
-
     static Stream<String> nameError(){
         return Stream.of("", "    ", null);
     }
@@ -70,4 +70,9 @@ public class PlayerTest {
     static Stream<String> emailError(){
         return Stream.of("", "    ", null, "beth.harmongmail.com", "Beth");
     }
+
+
+
+
+
 }
